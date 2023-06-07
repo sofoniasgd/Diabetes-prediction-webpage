@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Diabetes Predictor</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 Trial Version - https://www.wysiwygwebbuilder.com">
+<link href="static/Untitled1.css" rel="stylesheet">
+<link href="static/index.css" rel="stylesheet">
+<link href="static/wb.validation.css" rel="stylesheet">
+<script src="static/jquery-3.6.0.min.js"></script>
+<script src="static/wb.validation.min.js"></script>
+
+<script>
+$(document).ready(function()
+{
+   $("#Form9").submit(function(event)
+   {
+      var isValid = $.validate.form(this);
+      return isValid;
+   });
+   $("#Editbox1").validate(
+   {
+      required: false,
+      type: 'number',
+      expr_min: '>=',
+      expr_max: '<=',
+      value_min: '0',
+      value_max: '15',
+      color_text: '#000000',
+      color_hint: '#FFFACD',
+      color_error: '#87CEEB',
+      color_border: '#808080',
+      nohint: true,
+      font_family: 'Arial',
+      font_size: '13px',
+      position: 'topleft',
+      offsetx: 0,
+      offsety: 0,
+      effect: 'none',
+      error_text: 'please enter valid pregnancy data'
+   });
+   $("#Editbox2").validate(
+   {
+      required: true,
+      type: 'number',
+      expr_min: '>',
+      expr_max: '<',
+      value_min: '40',
+      value_max: '2000',
+      color_text: '#000000',
+      color_hint: '#00FF00',
+      color_error: '#87CEFA',
+      color_border: '#808080',
+      nohint: true,
+      font_family: 'Arial',
+      font_size: '13px',
+      position: 'topleft',
+      offsetx: 0,
+      offsety: 0,
+      effect: 'none',
+      error_text: 'please enter valid Glucose data'
+   });
+   $("#Editbox3").validate(
+   {
+      required: true,
+      type: 'number',
+      expr_min: '>',
+      expr_max: '<',
+      value_min: '20',
+      value_max: '200',
+      color_text: '#000000',
+      color_hint: '#00FF00',
+      color_error: '#87CEFA',
+      color_border: '#808080',
+      nohint: true,
+      font_family: 'Arial',
+      font_size: '13px',
+      position: 'topleft',
+      offsetx: 0,
+      offsety: 0,
+      effect: 'none',
+      error_text: 'please enter correct Blood pressure'
+   });
+   $("#Editbox4").validate(
+   {
+      required: true,
+      type: 'number',
+      expr_min: '>=',
+      expr_max: '<',
+      value_min: '0',
+      value_max: '99',
+      color_text: '#000000',
+      color_hint: '#00FF00',
+      color_error: '#87CEFA',
+      color_border: '#808080',
+      nohint: true,
+      font_family: 'Arial',
+      font_size: '13px',
+      position: 'topleft',
+      offsetx: 0,
+      offsety: 0,
+      effect: 'none',
+      error_text: 'please enter valid Skin Thickness data'
+   });
+   $("#Editbox5").validate(
+   {
+      required: true,
+      type: 'number',
+      expr_min: '>=',
+      expr_max: '<=',
+      value_min: '0',
+      value_max: '846',
+      color_text: '#000000',
+      color_hint: '#00FF00',
+      color_error: '#87CEFA',
+      color_border: '#808080',
+      nohint: true,
+      font_family: 'Arial',
+      font_size: '13px',
+      position: 'topleft',
+      offsetx: 0,
+      offsety: 0,
+      effect: 'none',
+      error_text: 'please enter valid data'
+   });
+   $("#Editbox6").validate(
+   {
+      required: true,
+      type: 'number',
+      expr_min: '>=',
+      expr_max: '<=',
+      value_min: '10',
+      value_max: '68',
+      color_text: '#000000',
+      color_hint: '#00FF00',
+      color_error: '#87CEFA',
+      color_border: '#808080',
+      nohint: true,
+      font_family: 'Arial',
+      font_size: '13px',
+      position: 'topleft',
+      offsetx: 0,
+      offsety: 0,
+      effect: 'none',
+      error_text: 'please enter correct BMI'
+   });
+   $("#Editbox7").validate(
+   {
+      required: true,
+      type: 'number',
+      expr_min: '>=',
+      expr_max: '<=',
+      value_min: '0.078',
+      value_max: '3',
+      color_text: '#000000',
+      color_hint: '#00FF00',
+      color_error: '#87CEFA',
+      color_border: '#808080',
+      nohint: true,
+      font_family: 'Arial',
+      font_size: '13px',
+      position: 'topleft',
+      offsetx: 0,
+      offsety: 0,
+      effect: 'none',
+      error_text: 'please enter valid data'
+   });
+   $("#Editbox8").validate(
+   {
+      required: true,
+      type: 'number',
+      expr_min: '>=',
+      expr_max: '<=',
+      value_min: '10',
+      value_max: '120',
+      color_text: '#000000',
+      color_hint: '#00FF00',
+      color_error: '#87CEFA',
+      color_border: '#808080',
+      nohint: true,
+      font_family: 'Arial',
+      font_size: '13px',
+      position: 'topleft',
+      offsetx: 0,
+      offsety: 0,
+      effect: 'none',
+      error_text: 'please enter valid Age'
+   });
+});
+</script>
+
+</head>
+<body>
+<div id="wb_Image1" style="position:absolute;left:0px;top:0px;width:1514px;height:907px;z-index:17;">
+<img src="static/im1.jpg" id="Image1" alt="" width="1514" height="908"></div>
+<div id="wb_Shape2" style="position:absolute;left:921px;top:6px;width:17px;height:894px;z-index:18;">
+<img src="static/img0001.png" id="Shape2" alt="" width="17" height="894" style="width:17px;height:894px;"></div>
+<div id="wb_Shape1" style="position:absolute;left:950px;top:0px;width:531px;height:907px;opacity:0.90;z-index:19;">
+<img src="static/img0002.png" id="Shape1" alt="" width="531" height="907" style="width:531px;height:907px;"></div>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="static/builtwithwwb18.png" alt="WYSIWYG Web Builder" style="position:absolute;left:369px;top:832px;margin: 0;border-width:0;z-index:250" width="88" height="31"></a>
+<div id="wb_Heading1" style="position:absolute;left:13px;top:35px;width:801px;height:139px;z-index:21;">
+<h1 id="Heading1" class="CustomStyle">Machine Learning based Diabetes Prediction App </h1></div>
+<div id="wb_Text1" style="position:absolute;left:206px;top:183px;width:744px;height:22px;z-index:22;">
+<span style="color:#000000;font-family:Arial;font-size:24px;">Please enter your information on the form below</span></div>
+<div id="wb_Form9" style="position:absolute;left:206px;top:264px;width:415px;height:351px;z-index:23;">
+	<form name="inputf" method="post" action="/formm" enctype="multipart/form-data" id="Form9">
+		<label for="Editbox1" id="Label1" style="position:absolute;left:10px;top:15px;width:173px;height:16px;line-height:16px;z-index:0;">Pregnancies</label>
+		<input type="text" id="Editbox1" style="position:absolute;left:201px;top:15px;width:190px;height:16px;z-index:1;" name="Editbox1" value="" spellcheck="false">
+		<label for="Editbox2" id="Label2" style="position:absolute;left:10px;top:46px;width:173px;height:16px;line-height:16px;z-index:16;">Glucose(mg/dl)</label>
+		<input type="text" id="Editbox2" style="position:absolute;left:201px;top:46px;width:190px;height:16px;z-index:2;" name="Editbox2" value="" spellcheck="false">
+		<label for="Editbox3" id="Label3" style="position:absolute;left:10px;top:77px;width:173px;height:16px;line-height:16px;z-index:3;">Blood Pressure</label>
+		<input type="text" id="Editbox3" style="position:absolute;left:201px;top:77px;width:190px;height:16px;z-index:4;" name="Editbox3" value="" spellcheck="false">
+		<label for="Editbox4" id="Label4" style="position:absolute;left:10px;top:108px;width:173px;height:16px;line-height:16px;z-index:5;">Skin Thickness</label>
+		<input type="text" id="Editbox4" style="position:absolute;left:201px;top:108px;width:190px;height:16px;z-index:6;" name="Editbox4" value="" spellcheck="false">
+		<label for="Editbox5" id="Label5" style="position:absolute;left:10px;top:139px;width:173px;height:16px;line-height:16px;z-index:7;">Insulin</label>
+		<input type="text" id="Editbox5" style="position:absolute;left:201px;top:139px;width:190px;height:16px;z-index:8;" name="Editbox5" value="" spellcheck="false">
+		<label for="Editbox6" id="Label6" style="position:absolute;left:10px;top:170px;width:173px;height:16px;line-height:16px;z-index:9;">BMI</label>
+		<input type="text" id="Editbox6" style="position:absolute;left:201px;top:170px;width:190px;height:16px;z-index:10;" name="Editbox6" value="" spellcheck="false">
+		<label for="Editbox7" id="Label7" style="position:absolute;left:10px;top:201px;width:173px;height:16px;line-height:16px;z-index:11;">Diabetes Pedigree Function</label>
+		<input type="text" id="Editbox7" style="position:absolute;left:201px;top:201px;width:190px;height:16px;z-index:12;" name="Editbox7" value="" spellcheck="false">
+		<label for="Editbox8" id="Label8" style="position:absolute;left:10px;top:232px;width:173px;height:16px;line-height:16px;z-index:13;">Age</label>
+		<input type="text" id="Editbox8" style="position:absolute;left:201px;top:232px;width:190px;height:16px;z-index:14;" name="Editbox8" value="" spellcheck="false">
+		<input type="submit" id="Button1" name="" value="Submit" style="position:absolute;left:122px;top:283px;width:168px;height:42px;z-index:15;">
+		
+	</form>
+</div>
+<div id="wb_Text2" style="position:absolute;left:1004px;top:426px;width:447px;height:226px;text-align:center;z-index:24;">
+<span style="color:#000000;font-family:Arial;font-size:53px;line-height:48px;"><strong>St. Mary's University<br></strong></span><span style="color:#000000;font-family:Arial;font-size:35px;line-height:38px;"><strong>Faculty of informatics<br></strong></span><span style="color:#000000;font-family:Arial;font-size:24px;line-height:21px;"><strong><br>Data Science Assignment</strong></span><span style="color:#000000;font-family:Arial;font-size:17px;line-height:19px;"><strong><br></strong></span><span style="color:#000000;font-family:Arial;font-size:17px;line-height:20px;"><br>Tibebesilasie Ashenafy ........ SGS/0475/2014A<br>Sofonias Gashaw ................. SGS/0474/2014A<br>Saba Sitotaw ........................ SGS/0667/2014A<br>Meron Dejene ...................... SGS/0471/2014A</span></div>
+<div id="wb_Image2" style="position:absolute;left:1104px;top:75px;width:247px;height:302px;z-index:25;">
+<img src="static/a1bgv37mis.jpg" id="Image2" alt="" width="247" height="302"></div>
+<div id="wb_Shape3" style="position:absolute;left:1497px;top:6px;width:17px;height:894px;z-index:26;">
+<img src="static/img0003.png" id="Shape3" alt="" width="17" height="894" style="width:17px;height:894px;"></div>
+</body>
+</html>
